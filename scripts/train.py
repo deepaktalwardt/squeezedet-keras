@@ -6,20 +6,35 @@
 # Email: christopher@searchink.com
 
 
-from main.model.squeezeDet import  SqueezeDet
-from main.model.dataGenerator import generator_from_data_path
+# from main.model.squeezeDet import SqueezeDet
+# from main.model.dataGenerator import generator_from_data_path
+# import keras.backend as K
+# from keras import optimizers
+# import tensorflow as tf
+# from keras.callbacks import TensorBoard, ModelCheckpoint, LearningRateScheduler, ReduceLROnPlateau
+# from main.model.modelLoading import load_only_possible_weights
+# from main.model.multi_gpu_model_checkpoint import  ModelCheckpointMultiGPU
+# import argparse
+# import os
+# import gc
+# from keras.utils import multi_gpu_model
+# import pickle
+# from main.config.create_config import load_dict
+
+from squeezeDet import SqueezeDet
+from dataGenerator import generator_from_data_path
 import keras.backend as K
 from keras import optimizers
 import tensorflow as tf
 from keras.callbacks import TensorBoard, ModelCheckpoint, LearningRateScheduler, ReduceLROnPlateau
-from main.model.modelLoading import load_only_possible_weights
-from main.model.multi_gpu_model_checkpoint import  ModelCheckpointMultiGPU
+from modelLoading import load_only_possible_weights
+from multi_gpu_model_checkpoint import  ModelCheckpointMultiGPU
 import argparse
 import os
 import gc
 from keras.utils import multi_gpu_model
 import pickle
-from main.config.create_config import load_dict
+from create_config import load_dict
 
 #global variables can be set by optional arguments
 #TODO: Makes proper variables in train() instead of global arguments.
