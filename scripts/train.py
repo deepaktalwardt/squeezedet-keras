@@ -138,6 +138,7 @@ def train():
 
     #tf config and session
     config = tf.ConfigProto(allow_soft_placement=True)
+    config.gpu_options.allow_growth = True
     sess = tf.Session(config=config)
     # sess.gpu_options.allow_growth= True
     K.set_session(sess)
