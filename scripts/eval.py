@@ -6,19 +6,33 @@
 # Email: christopher@searchink.com
 
 
-from main.model.squeezeDet import  SqueezeDet
-from main.model.dataGenerator import generator_from_data_path, visualization_generator_from_data_path
+# from main.model.squeezeDet import  SqueezeDet
+# from main.model.dataGenerator import generator_from_data_path, visualization_generator_from_data_path
+# import keras.backend as K
+# from keras import optimizers
+# import tensorflow as tf
+# from main.model.evaluation import evaluate
+# from main.model.visualization import  visualize
+# import os
+# import time
+# import numpy as np
+# import argparse
+# from keras.utils import multi_gpu_model
+# from main.config.create_config import load_dict
+
+from squeezeDet import SqueezeDet
+from dataGenerator import generator_from_data_path, visualization_generator_from_data_path
 import keras.backend as K
 from keras import optimizers
 import tensorflow as tf
-from main.model.evaluation import evaluate
-from main.model.visualization import  visualize
+from evaluation import evaluate
+from visualization import visualize
 import os
 import time
 import numpy as np
 import argparse
 from keras.utils import multi_gpu_model
-from main.config.create_config import load_dict
+from create_config import load_dict
 
 #default values for some variables
 #TODO: uses them as proper parameters instead of global variables
