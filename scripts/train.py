@@ -40,7 +40,7 @@ from create_config import load_dict
 #TODO: Makes proper variables in train() instead of global arguments.
 img_file = "img_train.txt"
 gt_file = "gt_train.txt"
-log_dir_name = './log'
+log_dir_name = './log-2'
 init_file = "imagenet.h5"
 EPOCHS = 100
 STEPS = None
